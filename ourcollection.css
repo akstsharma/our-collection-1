@@ -1,0 +1,122 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    transition:all .2s cubic-bezier(.34,1.12,.68,1.31);
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+    background-color:#f4d261;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    border-radius: 0 0 20px 20px;
+
+}
+.logo{
+    width: 100px;
+    padding-right:5px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+.nav-links{
+    padding-top: 5px;
+}
+.nav-links li
+{
+    display: inline-block;
+    margin: 10px 30px;
+    color:white;
+    /* background-color: #8B4513; */
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-links li a {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #C4A484;
+    padding: 12px;
+    border: 2px solid #aea0a0 !important;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+.nav-links li a:hover {
+    color: #C4A484 !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+
+.gallery{
+    min-height: 100vh;
+    background-image:url(IMG-20240411-WA0022.jpg);
+    padding-bottom: 100px;
+    background-size: 1400px;
+}
+
+.gallery .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:20px 0;
+    list-style: none;
+}
+
+.gallery .controls .buttons{
+    height:40px;
+    width: 140px;
+    background:#ffffff;
+    color:#000000;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin:20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.gallery .controls .buttons.active{
+    background:#f4d261;
+    color:#fff;
+}
+
+.gallery .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.gallery .image-container .image{
+    height:250px;
+    width: 350px;
+    overflow: hidden;
+    border:15px solid #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    margin: 20px;
+}
+
+.gallery .image-container .image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.gallery .image-container .image:hover img{
+    transform: scale(1.4);
+}
